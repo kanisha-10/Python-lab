@@ -1,0 +1,8 @@
+arr = [1, 2, 3, 4, 1]
+
+unique_arr = []
+for num in arr:
+    if num not in unique_arr:
+        unique_arr.append(num)
+
+print("duplicate array =", unique_arr)
