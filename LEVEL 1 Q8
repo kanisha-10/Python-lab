@@ -1,0 +1,11 @@
+from statistics import mean, median, mode
+
+data = [12, 45, 83, 52]
+
+mean_val = mean(data)
+median_val = median(data)
+mode_val = mode(data)  # Note: mode will raise an error if no unique mode
+
+average = (mean_val + median_val + mode_val) / 3
+
+print("Output:", int(average))
