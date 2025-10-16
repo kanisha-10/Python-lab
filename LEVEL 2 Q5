@@ -1,0 +1,12 @@
+arr = [14, 16, 87, 36, 25, 89, 34]
+M = int(input("Enter M: "))
+N = int(input("Enter N: "))
+
+arr_sorted = sorted(arr)
+mth_max = sorted(arr, reverse=True)[M-1]
+nth_min = arr_sorted[N-1]
+
+print(f"{M}th Maximum Number =", mth_max)
+print(f"{N}th Minimum Number =", nth_min)
+print("Sum =", mth_max + nth_min)
+print("Difference =", mth_max - nth_min)
