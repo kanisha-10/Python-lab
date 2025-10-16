@@ -1,0 +1,31 @@
+def multiply_matrix(A, B):
+    result = [[0]*3 for _ in range(3)]
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                result[i][j] += A[i][k] * B[k][j]
+    return result
+
+A = [
+    [1, 1, 1],
+    [2, 2, 2],
+    [3, 3, 3]
+]
+
+B = [
+    [1, 1, 1],
+    [2, 2, 2],
+    [3, 3, 3]
+]
+
+C = [
+    [1, 1, 1],
+    [2, 2, 2],
+    [3, 3, 3]
+]
+
+temp = multiply_matrix(A, B)
+final = multiply_matrix(temp, C)
+
+for row in final:
+    print(*row)
