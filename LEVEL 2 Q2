@@ -1,0 +1,4 @@
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+diagonal = [arr[0], arr[4], arr[8]]
+print("Diagonal elements are:", ", ".join(map(str, diagonal)))
+print("Sum of diagonal elements =", sum(diagonal))
