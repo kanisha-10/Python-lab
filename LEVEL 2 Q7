@@ -1,0 +1,12 @@
+name = input("Enter customer name: ")
+mobile = input("Enter mobile number: ")
+cost = float(input("Enter cost of purchase: "))
+
+discount = 0.1 * cost  # 10% discount
+total = cost - discount
+
+print(f"Customer Name: {name}")
+print(f"Mobile Number: {mobile}")
+print(f"Cost: {cost}")
+print(f"Discount: {discount}")
+print(f"Total Amount to be Paid: {total}")
